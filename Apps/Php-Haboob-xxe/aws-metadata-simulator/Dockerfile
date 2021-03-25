@@ -1,4 +1,4 @@
-FROM golang
+FROM golang:1.12
 RUN git clone https://github.com/priorax/mock-ec2-metadata.git
 WORKDIR /go/mock-ec2-metadata/
 RUN make deps && make
